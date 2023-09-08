@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import scanpy as sc
-import plotly.express as px
+# import plotly.express as px
 
 st.write("""
 <style>
@@ -89,5 +89,5 @@ option = st.selectbox(
 st.write('You selected:', option)
 if option:
     df = ge_df.T
-    fig = px.histogram(df, x=option)
-    st.plotly_chart(fig, use_container_width=True)
+    # fig = px.histogram(df, x=option)
+    # st.plotly_chart(fig, use_container_width=True)
